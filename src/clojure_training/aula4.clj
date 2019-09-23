@@ -42,3 +42,14 @@
 
 (println (reduce + precos))
 (println (reduce - precos))
+
+; DEMO OF HOW REDUCE WORKS
+
+(defn minha-soma
+  "Function that sums two values"
+  [valor-1 valor-2]
+  (println "somando" valor-1 valor-2)
+  (+ valor-1 valor-2))
+
+(println (reduce minha-soma precos))
+(println (reduce minha-soma (range 10)))
